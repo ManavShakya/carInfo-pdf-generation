@@ -137,7 +137,7 @@
       font-weight: Medium;
       font-size: 14px;
       opacity: 1;
-      text-align: right;">Updated: 3-Nov-2022</div>
+      text-align: right;">Updated: ${date}</div>
     <div style="width: fit-content;
     width: -moz-fit-content;
     padding-left: 8px;
@@ -159,7 +159,7 @@
       font-weight: Bold;
       font-size: 21px;
       opacity: 1;
-      text-align: left;">DL9CAN7993</div>
+      text-align: left;">${rcNumber}</div>
     <div style=" width: 190px;
       color: rgba(25, 42, 91, 1);
       position: absolute;
@@ -169,8 +169,8 @@
       font-weight: Bold;
       font-size: 18px;
       opacity: 1;
-      text-align: left;">Maruti Suzuki Baleno</div>
-    <div style="width: 109px;
+      text-align: left;">${vehicleName}</div>
+    <div style="width: 150px;
       color: rgba(19, 194, 194, 1);
       position: absolute;
       top: 241px;
@@ -179,7 +179,7 @@
       font-weight: SemiBold;
       font-size: 16px;
       opacity: 1;
-      text-align: left;">Second owner</div>
+      text-align: left;">${Second owner}</div>
     <div style="width: 52px;
       color: rgba(25, 42, 91, 1);
       position: absolute;
@@ -199,7 +199,7 @@
       font-weight: Bold;
       font-size: 14px;
       opacity: 1;
-      text-align: left;">29-Sep-2017 (5 years, 1 month, 30 days)</div>
+      text-align: left;">${issueDate}</div>
     <div style="width: 580px;
     opacity: 1;
     position: absolute;
@@ -214,7 +214,7 @@
     font-weight: Bold;
     font-size: 21px;
     opacity: 1;
-    text-align: left;">Manav Shakya</div>
+    text-align: left;">${ownerName}</div>
             <div style="
             top: 0px;
             left:490px;
@@ -234,7 +234,7 @@
         font-weight: SemiBold;
         font-size: 12px;
         opacity: 1;
-        text-align: center;">Active</div>
+        text-align: center;">${status}</div>
     </div>
     <div style="width: 92px;
       color: rgba(25, 42, 91, 1);
@@ -255,7 +255,7 @@
       font-weight: Bold;
       font-size: 14px;
       opacity: 1;
-      text-align: left;">19-Sep-2023</div>
+      text-align: left;">${expireDate}</div>
     <div style="width: 63px;
       color: rgba(25, 42, 91, 1);
       position: absolute;
@@ -275,7 +275,7 @@
       font-weight: Bold;
       font-size: 14px;
       opacity: 1;
-      text-align: left;">13-Nov-2022</div>
+      text-align: left;">${pucExpiration}</div>
     <div style="width: 22px;
       color: rgba(25, 42, 91, 1);
       position: absolute;
@@ -306,7 +306,7 @@
       font-size: 11px;
       opacity: 1;
       text-align: right;">Transmission</div>
-    <div style="width: 42px;
+    <div style="width: 100px;
       color: rgba(25, 42, 91, 1);
       position: absolute;
       top: 399px;
@@ -315,8 +315,8 @@
       font-weight: Bold;
       font-size: 14px;
       opacity: 1;
-      text-align: right;">Petrol</div>
-    <div style="width: 50px;
+      text-align: right;">${fuelType}</div>
+    <div style="width: 150px;
       color: rgba(25, 42, 91, 1);
       position: absolute;
       top: 464px;
@@ -325,7 +325,7 @@
       font-weight: Bold;
       font-size: 14px;
       opacity: 1;
-      text-align: right;">Manual</div>
+      text-align: right;">${transmissionType}</div>
     <div style=" width: 114px;
       color: rgba(25, 42, 91, 1);
       position: absolute;
@@ -345,7 +345,7 @@
       font-weight: Bold;
       font-size: 14px;
       opacity: 1;
-      text-align: left;">Dwarka, New Delhi</div>
+      text-align: left;">${rtoName}</div>
     <div style="width: 159px;
       color: rgba(25, 42, 91, 1);
       position: absolute;
@@ -385,7 +385,7 @@
       font-weight: Bold;
       font-size: 14px;
       opacity: 1;
-      text-align: left;">28-Sep-2032 (9 years, 1 month)</div>
+      text-align: left;">${rcValidity}</div>
     <div style="width: 291px;
       color: rgba(25, 42, 91, 1);
       position: absolute;
@@ -395,7 +395,7 @@
       font-weight: Bold;
       font-size: 14px;
       opacity: 1;
-      text-align: left;">NOC issued for, null, PB (DL2) vide no DL/2/</div>
+      text-align: left;">${nocStatus}</div>
     <div style="width: 48px;
       color: rgba(25, 42, 91, 1);
       position: absolute;
@@ -415,8 +415,8 @@
       font-weight: Medium;
       font-size: 11px;
       opacity: 1;
-      text-align: right;">Blacklist Status</div>
-    <div style="width: 57px;
+      text-align: left;">Blacklist Status</div>
+    <div style="width: 150px;
       color: rgba(25, 42, 91, 1);
       position: absolute;
       top: 637px;
@@ -425,8 +425,8 @@
       font-weight: Bold;
       font-size: 14px;
       opacity: 1;
-      text-align: right;">On Cash</div>
-    <div style="width: 36px;
+      text-align: right;">${financier}</div>
+    <div style="width: 150px;
       color: rgba(25, 42, 91, 1);
       position: absolute;
       top: 702px;
@@ -435,23 +435,7 @@
       font-weight: Bold;
       font-size: 14px;
       opacity: 1;
-      text-align: right;">None</div>
-    <!-- <div style="width: 210px;
-      height: 148px;
-      background: url(../images/v1_49.png);
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      opacity: 1;
-      position: absolute;
-      top: 113px;
-      left: 231px;
-      border-top-left-radius: 32px;
-      border-top-right-radius: 32px;
-      border-bottom-left-radius: 32px;
-      border-bottom-right-radius: 32px;
-      box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.10000000149011612);
-      overflow: hidden;"></div> -->
+      text-align: right;">${blacklistStatus}</div>
   </div>
 </body>
 
