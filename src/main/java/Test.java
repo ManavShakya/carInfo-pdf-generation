@@ -77,19 +77,19 @@ public class Test
             File htmlSourceFile1 = new File("src/main/resources/rc_detail_1.html");// source path
             File file1 = new File("src/main/resources/test1.pdf"); //output path
             PdfDocument pdfDoc1 = new PdfDocument(new com.itextpdf.kernel.pdf.PdfWriter(file1));
-            pdfDoc1.setDefaultPageSize(new PageSize(530, 750));
+            pdfDoc1.setDefaultPageSize(pdfDoc1.getDefaultPageSize());
             HtmlConverter.convertToPdf(new FileInputStream(htmlSourceFile1),pdfDoc1);
 
             File htmlSourceFile2 = new File("src/main/resources/rc_detail_2.html");// source path
             File file2 = new File("src/main/resources/test2.pdf"); //output path
             PdfDocument pdfDoc2 = new PdfDocument(new com.itextpdf.kernel.pdf.PdfWriter(file2));
-            pdfDoc2.setDefaultPageSize(new PageSize(530, 750));
+            pdfDoc2.setDefaultPageSize(pdfDoc2.getDefaultPageSize());
             HtmlConverter.convertToPdf(new FileInputStream(htmlSourceFile2),pdfDoc2);
 
             File htmlSourceFile3 = new File("src/main/resources//rc_detail_3.html");// source path
             File file3 = new File("src/main/resources/test3.pdf"); //output path
             PdfDocument pdfDoc3 = new PdfDocument(new com.itextpdf.kernel.pdf.PdfWriter(file3));
-            pdfDoc3.setDefaultPageSize(new PageSize(530, 750));
+            pdfDoc3.setDefaultPageSize(pdfDoc3.getDefaultPageSize());
             HtmlConverter.convertToPdf(new FileInputStream(htmlSourceFile3),pdfDoc3);
         } catch (Exception e) {
             e.printStackTrace();
